@@ -47,3 +47,3338 @@ Served asset /jquery_ujs.js - 200 OK (9ms)
 
 Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 01:44:56 -0700
 Served asset /jquery.js - 200 OK (36ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-27 06:20:21 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (44.1ms)
+Completed 500 Internal Server Error in 97ms
+
+ActionView::Template::Error (undefined local variable or method `movies' for #<#<Class:0xa7f1084>:0xb31912bc>):
+    4: %table#movies
+    5:   %thead
+    6:     %tr
+    7:       %th= link_to "Movie Title", movies
+    8:       %th Rating
+    9:       %th Release Date
+    10:       %th More Info
+  app/views/movies/index.html.haml:7:in `_app_views_movies_index_html_haml___694510489__643207418'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (2.6ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-27 06:21:59 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (22.6ms)
+Completed 500 Internal Server Error in 29ms
+
+ActionView::Template::Error (undefined local variable or method `movie' for #<#<Class:0x991d224>:0x98d215c>):
+    4: %table#movies
+    5:   %thead
+    6:     %tr
+    7:       %th= link_to "Movie Title", movie
+    8:       %th Rating
+    9:       %th Release Date
+    10:       %th More Info
+  app/views/movies/index.html.haml:7:in `_app_views_movies_index_html_haml___694510489_80109110'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (2.7ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-27 06:22:23 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (15.9ms)
+Compiled application.css  (0ms)  (pid 10365)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:22:23 -0700
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:22:23 -0700
+Served asset /jquery.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:22:23 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:22:23 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-27 06:22:39 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (51.4ms)
+Completed 500 Internal Server Error in 57ms
+
+ActionView::Template::Error (undefined local variable or method `movie' for #<#<Class:0x98898f8>:0x9813978>):
+    4: %table#movies
+    5:   %thead
+    6:     %tr
+    7:       %th= link_to "Movie Title", movie
+    8:       %th Rating
+    9:       %th Release Date
+    10:       %th More Info
+  app/views/movies/index.html.haml:7:in `_app_views_movies_index_html_haml___694510489_79683480'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-27 06:22:47 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (14.0ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:22:47 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:22:47 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:22:47 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:22:47 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-27 06:22:49 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (35.8ms)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:22:49 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:22:49 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:22:49 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:22:49 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-27 06:22:50 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:22:51 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:22:51 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:22:51 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:22:51 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-27 06:23:26 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:23:26 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:23:26 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:23:26 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:23:26 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-27 06:23:54 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:23:54 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:23:54 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:23:54 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:23:54 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-27 06:23:58 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:23:58 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:23:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:23:58 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:23:58 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-27 06:23:59 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (36.3ms)
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:23:59 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:23:59 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:23:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:23:59 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-27 06:24:00 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (14.7ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:24:00 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:24:00 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:24:00 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:24:00 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-27 06:24:46 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+ERROR: compiling _app_views_movies_index_html_haml___694510489__645089348 RAISED /home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+Function body:           def _app_views_movies_index_html_haml___694510489__645089348(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "movies/index";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>All Movies</h1>\n<table id='movies'>\n  <thead>\n    <tr>\n      <th>#{_hamlout.adjust_tabs(4); 
+
+
+
+
+
+_hamlout.format_script_false_true_false_true_false_true_false((link_to "Movie Title" movies_path
+));}</th>\n      <th>Rating</th>\n      <th>#{_hamlout.adjust_tabs(1); 
+_hamlout.format_script_false_true_false_true_false_true_false((link_to "Release Date"
+));}</th>\n      <th>More Info</th>\n    </tr>\n  </thead>\n  <tbody>\n", -1, false);
+
+ @movies.each do |movie|
+_hamlout.push_text("    <tr>\n      <td>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false((movie.title
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((movie.rating
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((movie.release_date
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to "More about #{movie.title}", movie
+));}</td>\n    </tr>\n", -1, false);end
+_hamlout.push_text("  </tbody>\n</table>\n#{_hamlout.adjust_tabs(-2); _hamlout.format_script_false_false_false_true_false_true_false(( link_to 'Add new movie', new_movie_path
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `module_eval'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `compile'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:190:in `compile!'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:143:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:55:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:142:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:9:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:120:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:99:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/local/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:167:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:416:in `_run__400514938__process_action__151765343__callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:121:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:45:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal.rb:193:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal.rb:236:in `block in action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:531:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/etag.rb:23:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/conditionalget.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/flash.rb:243:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:195:in `context'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:190:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/cookies.rb:326:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/query_cache.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/sendfile.rb:101:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/lock.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/static.rb:53:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/engine.rb:455:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/content_length.rb:16:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/handler/webrick.rb:59:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered movies/index.html.haml within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (/home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:7: syntax error, unexpected tIDENTIFIER, expecting ')'):
+    4: %table#movies
+    5:   %thead
+    6:     %tr
+    7:       %th= link_to "Movie Title" movies_path
+    8:       %th Rating
+    9:       %th= link_to "Release Date"
+    10:       %th More Info
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-27 06:25:17 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (40.9ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:25:17 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:25:17 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:25:17 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:25:17 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-27 06:36:37 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (12.4ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:36:37 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:37 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:37 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:37 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-27 06:36:39 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (8.4ms)
+Completed 200 OK in 20ms (Views: 13.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:36:39 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:39 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:39 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:36:42 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (8.9ms)
+Completed 200 OK in 19ms (Views: 14.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:36:42 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:42 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:42 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:42 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:36:43 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (13.8ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:36:43 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:43 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:43 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:43 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:36:46 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (38.0ms)
+Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:36:46 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:46 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:46 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:46 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:36:47 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (14.1ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:36:47 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:47 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:47 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:47 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:36:48 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:36:48 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:48 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-27 06:36:51 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 22ms (Views: 17.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:36:51 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:51 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:51 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:51 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:36:53 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (14.9ms)
+Completed 200 OK in 27ms (Views: 19.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:36:53 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:53 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:53 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:36:53 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:38:12 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (40.6ms)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:38:12 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:38:12 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:38:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:38:12 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:38:14 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:38:14 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:38:14 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:38:14 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:38:14 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:38:15 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (14.1ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:38:15 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:38:15 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:38:15 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:38:15 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:38:17 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:38:17 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:38:17 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:38:17 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:38:17 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:38:20 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 24ms (Views: 19.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:38:20 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:38:20 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:38:20 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:38:20 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:38:21 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:38:21 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:38:21 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:38:21 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:38:21 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:39:57 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:39:57 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:39:57 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:39:57 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:39:57 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:39:59 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (13.9ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:39:59 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:39:59 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:39:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:39:59 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:40:02 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (13.7ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:40:02 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:40:02 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:40:02 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:40:02 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:40:06 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:40:06 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:40:06 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:40:06 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:40:06 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:40:08 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:40:08 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:40:08 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:40:08 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:40:08 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:41:41 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+ERROR: compiling _app_views_movies_index_html_haml___694510489__638952718 RAISED /home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+..." if @sort == "title")} link_to  'Movie Title', movies_path(...
+...                               ^
+/home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+..." if @sort == "title")} link_to "Release Date", movies_path(...
+...                               ^
+Function body:           def _app_views_movies_index_html_haml___694510489__638952718(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "movies/index";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>All Movies</h1>\n<table id='movies'>\n  <thead>\n    <tr>\n      <!-- %th= link_to \"Movie Title\", movies_path -->\n      <th>#{_hamlout.adjust_tabs(4); 
+
+
+
+
+
+
+_hamlout.format_script_false_true_false_true_false_true_false(({:class => ("hilite" if @sort == "title")} link_to  'Movie Title', movies_path(:sort => 'title'), :id => 'title_header'
+));}</th>\n      <th>Rating</th>\n      <th>#{_hamlout.adjust_tabs(1); 
+_hamlout.format_script_false_true_false_true_false_true_false(({:class => ("hilite" if @sort == "title")} link_to "Release Date", movies_path(:sort => 'release_date'), :id => 'release_date_header'
+));}</th>\n      <th>More Info</th>\n    </tr>\n  </thead>\n  <tbody>\n", -1, false);
+
+ @movies.each do |movie|
+_hamlout.push_text("    <tr>\n      <td>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false((movie.title
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((movie.rating
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((movie.release_date
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to "More about #{movie.title}", movie
+));}</td>\n    </tr>\n", -1, false);end
+_hamlout.push_text("  </tbody>\n</table>\n#{_hamlout.adjust_tabs(-2); _hamlout.format_script_false_false_false_true_false_true_false(( link_to 'Add new movie', new_movie_path
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `module_eval'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `compile'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:190:in `compile!'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:143:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:55:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:142:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:9:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:120:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:99:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/local/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:167:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:416:in `_run__400514938__process_action__151765343__callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:121:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:45:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal.rb:193:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal.rb:236:in `block in action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:531:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/etag.rb:23:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/conditionalget.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/flash.rb:243:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:195:in `context'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:190:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/cookies.rb:326:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/query_cache.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/sendfile.rb:101:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/lock.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/static.rb:53:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/engine.rb:455:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/content_length.rb:16:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/handler/webrick.rb:59:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered movies/index.html.haml within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (/home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+..." if @sort == "title")} link_to  'Movie Title', movies_path(...
+...                               ^
+/home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+..." if @sort == "title")} link_to "Release Date", movies_path(...
+...                               ^):
+    5:   %thead
+    6:     %tr
+    7:       / %th= link_to "Movie Title", movies_path
+    8:       %th={:class => ("hilite" if @sort == "title")} link_to  'Movie Title', movies_path(:sort => 'title'), :id => 'title_header'
+    9:       %th Rating
+    10:       %th={:class => ("hilite" if @sort == "title")} link_to "Release Date", movies_path(:sort => 'release_date'), :id => 'release_date_header'
+    11:       %th More Info
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (2.8ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:42:19 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+ERROR: compiling _app_views_movies_index_html_haml___694510489__643552148 RAISED /home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+..." if @sort == "title")} link_to  'Movie Title', movies_path(...
+...                               ^
+/home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ort == "release_date")} link_to "Release Date", movies_path(...
+...                               ^
+Function body:           def _app_views_movies_index_html_haml___694510489__643552148(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "movies/index";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>All Movies</h1>\n<table id='movies'>\n  <thead>\n    <tr>\n      <!-- %th= link_to \"Movie Title\", movies_path -->\n      <th>#{_hamlout.adjust_tabs(4); 
+
+
+
+
+
+
+_hamlout.format_script_false_true_false_true_false_true_false(({:class => ("hilite" if @sort == "title")} link_to  'Movie Title', movies_path(:sort => 'title'), :id => 'title_header'
+));}</th>\n      <th>Rating</th>\n      <th>#{_hamlout.adjust_tabs(1); 
+_hamlout.format_script_false_true_false_true_false_true_false(({:class => ("hilite" if @sort == "release_date")} link_to "Release Date", movies_path(:sort => 'release_date'), :id => 'release_date_header'
+));}</th>\n      <th>More Info</th>\n    </tr>\n  </thead>\n  <tbody>\n", -1, false);
+
+ @movies.each do |movie|
+_hamlout.push_text("    <tr>\n      <td>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false((movie.title
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((movie.rating
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((movie.release_date
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to "More about #{movie.title}", movie
+));}</td>\n    </tr>\n", -1, false);end
+_hamlout.push_text("  </tbody>\n</table>\n#{_hamlout.adjust_tabs(-2); _hamlout.format_script_false_false_false_true_false_true_false(( link_to 'Add new movie', new_movie_path
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `module_eval'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `compile'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:190:in `compile!'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:143:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:55:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:142:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:9:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:120:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:99:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/local/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:167:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:416:in `_run__400514938__process_action__151765343__callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:121:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:45:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal.rb:193:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal.rb:236:in `block in action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:531:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/etag.rb:23:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/conditionalget.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/flash.rb:243:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:195:in `context'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:190:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/cookies.rb:326:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/query_cache.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/sendfile.rb:101:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/lock.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/static.rb:53:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/engine.rb:455:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/content_length.rb:16:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/handler/webrick.rb:59:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered movies/index.html.haml within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (/home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+..." if @sort == "title")} link_to  'Movie Title', movies_path(...
+...                               ^
+/home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ort == "release_date")} link_to "Release Date", movies_path(...
+...                               ^):
+    5:   %thead
+    6:     %tr
+    7:       / %th= link_to "Movie Title", movies_path
+    8:       %th={:class => ("hilite" if @sort == "title")} link_to  'Movie Title', movies_path(:sort => 'title'), :id => 'title_header'
+    9:       %th Rating
+    10:       %th={:class => ("hilite" if @sort == "release_date")} link_to "Release Date", movies_path(:sort => 'release_date'), :id => 'release_date_header'
+    11:       %th More Info
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.1ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:43:11 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+ERROR: compiling _app_views_movies_index_html_haml___694510489__650524548 RAISED /home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+...if @sortby == "title")} link_to  'Movie Title', movies_path(...
+...                               ^
+/home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+...tby == "release_date")} link_to "Release Date", movies_path(...
+...                               ^
+Function body:           def _app_views_movies_index_html_haml___694510489__650524548(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "movies/index";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>All Movies</h1>\n<table id='movies'>\n  <thead>\n    <tr>\n      <!-- %th= link_to \"Movie Title\", movies_path -->\n      <th>#{_hamlout.adjust_tabs(4); 
+
+
+
+
+
+
+_hamlout.format_script_false_true_false_true_false_true_false(({:class => ("hilite" if @sortby == "title")} link_to  'Movie Title', movies_path(:sort => 'title'), :id => 'title_header'
+));}</th>\n      <th>Rating</th>\n      <th>#{_hamlout.adjust_tabs(1); 
+_hamlout.format_script_false_true_false_true_false_true_false(({:class => ("hilite" if @sortby == "release_date")} link_to "Release Date", movies_path(:sort => 'release_date'), :id => 'release_date_header'
+));}</th>\n      <th>More Info</th>\n    </tr>\n  </thead>\n  <tbody>\n", -1, false);
+
+ @movies.each do |movie|
+_hamlout.push_text("    <tr>\n      <td>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false((movie.title
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((movie.rating
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((movie.release_date
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to "More about #{movie.title}", movie
+));}</td>\n    </tr>\n", -1, false);end
+_hamlout.push_text("  </tbody>\n</table>\n#{_hamlout.adjust_tabs(-2); _hamlout.format_script_false_false_false_true_false_true_false(( link_to 'Add new movie', new_movie_path
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `module_eval'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `compile'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:190:in `compile!'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:143:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:55:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:142:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:9:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:120:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:99:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/local/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:167:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:416:in `_run__400514938__process_action__151765343__callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:121:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:45:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal.rb:193:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal.rb:236:in `block in action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:531:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/etag.rb:23:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/conditionalget.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/flash.rb:243:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:195:in `context'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:190:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/cookies.rb:326:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/query_cache.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/sendfile.rb:101:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/lock.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/static.rb:53:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/engine.rb:455:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/content_length.rb:16:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/handler/webrick.rb:59:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered movies/index.html.haml within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (/home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+...if @sortby == "title")} link_to  'Movie Title', movies_path(...
+...                               ^
+/home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+...tby == "release_date")} link_to "Release Date", movies_path(...
+...                               ^):
+    5:   %thead
+    6:     %tr
+    7:       / %th= link_to "Movie Title", movies_path
+    8:       %th={:class => ("hilite" if @sortby == "title")} link_to  'Movie Title', movies_path(:sort => 'title'), :id => 'title_header'
+    9:       %th Rating
+    10:       %th={:class => ("hilite" if @sortby == "release_date")} link_to "Release Date", movies_path(:sort => 'release_date'), :id => 'release_date_header'
+    11:       %th More Info
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-27 06:43:14 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+ERROR: compiling _app_views_movies_index_html_haml___694510489__650524548 RAISED /home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+...if @sortby == "title")} link_to  'Movie Title', movies_path(...
+...                               ^
+/home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+...tby == "release_date")} link_to "Release Date", movies_path(...
+...                               ^
+Function body:           def _app_views_movies_index_html_haml___694510489__650524548(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "movies/index";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>All Movies</h1>\n<table id='movies'>\n  <thead>\n    <tr>\n      <!-- %th= link_to \"Movie Title\", movies_path -->\n      <th>#{_hamlout.adjust_tabs(4); 
+
+
+
+
+
+
+_hamlout.format_script_false_true_false_true_false_true_false(({:class => ("hilite" if @sortby == "title")} link_to  'Movie Title', movies_path(:sort => 'title'), :id => 'title_header'
+));}</th>\n      <th>Rating</th>\n      <th>#{_hamlout.adjust_tabs(1); 
+_hamlout.format_script_false_true_false_true_false_true_false(({:class => ("hilite" if @sortby == "release_date")} link_to "Release Date", movies_path(:sort => 'release_date'), :id => 'release_date_header'
+));}</th>\n      <th>More Info</th>\n    </tr>\n  </thead>\n  <tbody>\n", -1, false);
+
+ @movies.each do |movie|
+_hamlout.push_text("    <tr>\n      <td>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false((movie.title
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((movie.rating
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((movie.release_date
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to "More about #{movie.title}", movie
+));}</td>\n    </tr>\n", -1, false);end
+_hamlout.push_text("  </tbody>\n</table>\n#{_hamlout.adjust_tabs(-2); _hamlout.format_script_false_false_false_true_false_true_false(( link_to 'Add new movie', new_movie_path
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `module_eval'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `compile'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:190:in `compile!'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:143:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:55:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:142:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:9:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:120:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:99:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/local/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:167:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:416:in `_run__400514938__process_action__151765343__callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:121:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:45:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal.rb:193:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal.rb:236:in `block in action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:531:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/etag.rb:23:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/conditionalget.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/flash.rb:243:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:195:in `context'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:190:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/cookies.rb:326:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/query_cache.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/sendfile.rb:101:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/lock.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/static.rb:53:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/engine.rb:455:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/content_length.rb:16:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/handler/webrick.rb:59:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered movies/index.html.haml within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (/home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:8: syntax error, unexpected tIDENTIFIER, expecting ')'
+...if @sortby == "title")} link_to  'Movie Title', movies_path(...
+...                               ^
+/home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:10: syntax error, unexpected tIDENTIFIER, expecting ')'
+...tby == "release_date")} link_to "Release Date", movies_path(...
+...                               ^):
+    5:   %thead
+    6:     %tr
+    7:       / %th= link_to "Movie Title", movies_path
+    8:       %th={:class => ("hilite" if @sortby == "title")} link_to  'Movie Title', movies_path(:sort => 'title'), :id => 'title_header'
+    9:       %th Rating
+    10:       %th={:class => ("hilite" if @sortby == "release_date")} link_to "Release Date", movies_path(:sort => 'release_date'), :id => 'release_date_header'
+    11:       %th More Info
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (2.8ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-07-27 06:43:52 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (16.0ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:43:52 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:43:52 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:43:52 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:43:52 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:43:54 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (60.8ms)
+Completed 200 OK in 71ms (Views: 70.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:43:54 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:43:54 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:43:54 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:43:54 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:43:56 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:43:56 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:43:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:43:56 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:43:56 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:43:56 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (15.0ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:43:57 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:43:57 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:43:57 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:43:57 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:43:57 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (13.4ms)
+Completed 200 OK in 59ms (Views: 51.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:43:58 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:43:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:43:58 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:43:58 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:43:58 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:43:58 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:43:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:43:58 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:43:58 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:44:07 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:44:07 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:44:07 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:44:07 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:44:07 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:44:09 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:44:09 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:44:09 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:44:09 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:44:09 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:44:10 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (15.9ms)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:44:10 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:44:10 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:44:10 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:44:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:47:40 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (41.6ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:47:40 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:40 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:40 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:47:42 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:47:42 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:42 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:42 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:42 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:47:43 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:47:43 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:43 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:43 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:43 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:47:44 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:47:45 -0700
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:45 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:45 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:45 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:47:45 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (11.5ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:47:45 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:45 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:46 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:46 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:47:47 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (56.7ms)
+Completed 200 OK in 63ms (Views: 61.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:47:47 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:47 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:47 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:47 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:47:47 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (14.1ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:47:47 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:47 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:47 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:47:47 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:50:52 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:50:52 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:52 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:52 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:52 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:50:53 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (11.9ms)
+Completed 200 OK in 23ms (Views: 17.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:50:53 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:53 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:53 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:53 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:50:54 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (16.2ms)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:50:54 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:55 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:55 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:55 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:50:56 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (16.0ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:50:56 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:56 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:56 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:50:57 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:50:57 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:57 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:57 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:57 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:50:58 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:50:58 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:58 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:58 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:50:59 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (44.9ms)
+Completed 200 OK in 54ms (Views: 51.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:50:59 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:59 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:50:59 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:53:01 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (14.0ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:53:01 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:01 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:01 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:01 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:53:03 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (14.7ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:53:03 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:03 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:03 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:03 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:53:04 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:53:04 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:04 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:04 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:04 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:53:05 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:53:05 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:05 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:05 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:05 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:53:42 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (39.0ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:53:42 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:42 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:42 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:42 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:53:57 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:53:57 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:57 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:57 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:57 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:53:58 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (9.6ms)
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:53:58 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:58 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:58 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:53:59 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (10.3ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:53:59 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:59 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:53:59 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:54:00 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (13.8ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:54:00 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:54:00 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:54:00 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:54:00 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:54:01 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (38.2ms)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:54:01 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:54:01 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:54:01 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:54:01 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:54:22 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+ERROR: compiling _app_views_movies_index_html_haml___694510489__641830288 RAISED /home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:10: syntax error, unexpected tASSOC, expecting ')'
+...:class => ("hilite" if @sort => :release_date))}>#{_hamlout....
+...                               ^
+Function body:           def _app_views_movies_index_html_haml___694510489__641830288(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "movies/index";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>All Movies</h1>\n<table id='movies'>\n  <thead>\n    <tr>\n      <!-- %th= link_to \"Movie Title\", movies_path -->\n      <th#{_hamlout.adjust_tabs(3); 
+
+
+
+
+
+
+_hamlout.attributes({}, nil, :class => ("hilite" if @sort == "title"))}>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to  'Movie Title', movies_path(:sort => :title), :id => 'title_header'
+));}</th>\n      <th>Rating</th>\n      <th#{
+_hamlout.attributes({}, nil, :class => ("hilite" if @sort => :release_date))}>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to "Release Date", movies_path(:sort => :release_date), :id => 'release_date_header'
+));}</th>\n      <th>More Info</th>\n    </tr>\n  </thead>\n  <tbody>\n", -1, false);
+
+ @movies.each do |movie|
+_hamlout.push_text("    <tr>\n      <td>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false((movie.title
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((movie.rating
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((movie.release_date
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to "More about #{movie.title}", movie
+));}</td>\n    </tr>\n", -1, false);end
+_hamlout.push_text("  </tbody>\n</table>\n#{_hamlout.adjust_tabs(-2); _hamlout.format_script_false_false_false_true_false_true_false(( link_to 'Add new movie', new_movie_path
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `module_eval'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `compile'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:190:in `compile!'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:143:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:55:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:142:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:9:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:120:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:99:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/local/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:167:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:416:in `_run__400514938__process_action__151765343__callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:121:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:45:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal.rb:193:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal.rb:236:in `block in action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:531:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/etag.rb:23:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/conditionalget.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/flash.rb:243:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:195:in `context'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:190:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/cookies.rb:326:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/query_cache.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/sendfile.rb:101:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/lock.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/static.rb:53:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/engine.rb:455:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/content_length.rb:16:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/handler/webrick.rb:59:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered movies/index.html.haml within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (/home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:10: syntax error, unexpected tASSOC, expecting ')'
+...:class => ("hilite" if @sort => :release_date))}>#{_hamlout....
+...                               ^):
+    7:       / %th= link_to "Movie Title", movies_path
+    8:       %th{:class => ("hilite" if @sort == "title")}= link_to  'Movie Title', movies_path(:sort => :title), :id => 'title_header'
+    9:       %th Rating
+    10:       %th{:class => ("hilite" if @sort => :release_date)}= link_to "Release Date", movies_path(:sort => :release_date), :id => 'release_date_header'
+    11:       %th More Info
+    12:   %tbody
+    13:     - @movies.each do |movie|
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:54:51 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+ERROR: compiling _app_views_movies_index_html_haml___694510489__641830288 RAISED /home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:10: syntax error, unexpected tASSOC, expecting ')'
+...:class => ("hilite" if @sort => :release_date))}>#{_hamlout....
+...                               ^
+Function body:           def _app_views_movies_index_html_haml___694510489__641830288(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "movies/index";_old_output_buffer = @output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :preserve=>["textarea", "pre", "code"], :attr_wrapper=>"'", :ugly=>false, :format=>:html5, :encoding=>"UTF-8", :escape_html=>true, :escape_attrs=>true});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>All Movies</h1>\n<table id='movies'>\n  <thead>\n    <tr>\n      <!-- %th= link_to \"Movie Title\", movies_path -->\n      <th#{_hamlout.adjust_tabs(3); 
+
+
+
+
+
+
+_hamlout.attributes({}, nil, :class => ("hilite" if @sort == "title"))}>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to  'Movie Title', movies_path(:sort => :title), :id => 'title_header'
+));}</th>\n      <th>Rating</th>\n      <th#{
+_hamlout.attributes({}, nil, :class => ("hilite" if @sort => :release_date))}>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to "Release Date", movies_path(:sort => :release_date), :id => 'release_date_header'
+));}</th>\n      <th>More Info</th>\n    </tr>\n  </thead>\n  <tbody>\n", -1, false);
+
+ @movies.each do |movie|
+_hamlout.push_text("    <tr>\n      <td>#{_hamlout.adjust_tabs(2); 
+_hamlout.format_script_false_true_false_true_false_true_false((movie.title
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((movie.rating
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((movie.release_date
+));}</td>\n      <td>#{_hamlout.adjust_tabs(1); _hamlout.format_script_false_true_false_true_false_true_false((link_to "More about #{movie.title}", movie
+));}</td>\n    </tr>\n", -1, false);end
+_hamlout.push_text("  </tbody>\n</table>\n#{_hamlout.adjust_tabs(-2); _hamlout.format_script_false_false_false_true_false_true_false(( link_to 'Add new movie', new_movie_path
+));}\n", 0, false);::Haml::Util.html_safe(_erbout);ensure;@haml_buffer = @haml_buffer.upper if @haml_buffer;end;
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `module_eval'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `compile'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:190:in `compile!'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:143:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:55:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/template.rb:142:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:9:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:120:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:99:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/local/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:167:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:416:in `_run__400514938__process_action__151765343__callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:121:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:45:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal.rb:193:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_controller/metal.rb:236:in `block in action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:531:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/etag.rb:23:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/conditionalget.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/flash.rb:243:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:195:in `context'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/session/abstract/id.rb:190:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/cookies.rb:326:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/query_cache.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.1.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/sendfile.rb:101:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.1.0/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/lock.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/static.rb:53:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/engine.rb:455:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/content_length.rb:16:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.1.0/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.3.5/lib/rack/handler/webrick.rb:59:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered movies/index.html.haml within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (/home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/views/movies/index.html.haml:10: syntax error, unexpected tASSOC, expecting ')'
+...:class => ("hilite" if @sort => :release_date))}>#{_hamlout....
+...                               ^):
+    7:       / %th= link_to "Movie Title", movies_path
+    8:       %th{:class => ("hilite" if @sort == "title")}= link_to  'Movie Title', movies_path(:sort => :title), :id => 'title_header'
+    9:       %th Rating
+    10:       %th{:class => ("hilite" if @sort => :release_date)}= link_to "Release Date", movies_path(:sort => :release_date), :id => 'release_date_header'
+    11:       %th More Info
+    12:   %tbody
+    13:     - @movies.each do |movie|
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:55:08 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (43.9ms)
+Completed 200 OK in 49ms (Views: 47.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:55:08 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:08 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:08 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:08 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:55:10 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (10.1ms)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:55:10 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:10 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:10 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:10 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:55:11 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (14.2ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:55:11 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:11 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:11 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:11 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:55:12 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (13.9ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:55:12 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:12 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:12 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:12 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:55:14 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (9.8ms)
+Completed 200 OK in 20ms (Views: 13.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:55:14 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:14 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:14 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:14 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:55:37 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (48.1ms)
+Completed 200 OK in 55ms (Views: 53.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:55:37 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:37 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:37 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:37 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:55:38 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (9.9ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:55:38 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:38 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:38 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:38 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:55:39 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (1.3ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:55:39 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:39 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:39 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:55:40 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (17.9ms)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:55:40 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:41 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:41 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:41 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:55:54 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 20ms (Views: 13.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:55:54 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:54 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:54 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:54 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:55:56 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 24ms (Views: 19.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:55:57 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:57 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:57 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:55:57 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:56:13 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:56:13 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:56:13 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:56:13 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:56:13 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:56:16 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 26ms (Views: 18.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:56:16 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:56:16 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:56:16 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:56:16 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:59:38 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (14.0ms)
+Completed 200 OK in 55ms (Views: 54.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:59:38 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:59:38 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:59:38 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:59:38 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:59:39 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (10.2ms)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:59:39 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:59:39 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:59:39 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:59:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:59:40 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:59:41 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:59:41 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:59:41 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:59:41 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 06:59:42 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:59:42 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:59:42 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:59:42 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:59:42 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 06:59:43 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (10.6ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 06:59:43 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 06:59:43 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 06:59:43 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 06:59:43 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 07:05:38 -0700
+
+SyntaxError (/home/ubuntu/dev/saas-edx/hw2_rottenpotatoes/app/controllers/movies_controller.rb:50: syntax error, unexpected $end, expecting keyword_end):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.5ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.9ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 07:05:53 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (10.0ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 07:05:53 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 07:05:53 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 07:05:53 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 07:05:53 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 07:05:56 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (9.7ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 07:05:56 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 07:05:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 07:05:56 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 07:05:56 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 07:05:57 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 07:05:57 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 07:05:57 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 07:05:57 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 07:05:57 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 07:05:58 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (13.4ms)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 07:05:58 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 07:05:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 07:05:58 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 07:05:58 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 07:06:00 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (14.8ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 07:06:00 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 07:06:00 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 07:06:00 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 07:06:01 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 07:06:34 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY title[0m
+Rendered movies/index.html.haml within layouts/application (37.9ms)
+Completed 200 OK in 44ms (Views: 41.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 07:06:34 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 07:06:34 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 07:06:34 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 07:06:34 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 07:06:36 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+Rendered movies/index.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 07:06:37 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 07:06:37 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 07:06:37 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 07:06:37 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 07:06:38 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY title[0m
+Rendered movies/index.html.haml within layouts/application (10.5ms)
+Completed 200 OK in 21ms (Views: 15.3ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 07:06:38 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 07:06:38 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 07:06:38 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 07:06:38 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 07:06:54 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+Rendered movies/index.html.haml within layouts/application (16.3ms)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 07:06:54 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 07:06:54 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 07:06:54 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 07:06:54 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=title" for 127.0.0.1 at 2013-07-27 07:07:01 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"title"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY title[0m
+Rendered movies/index.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 07:07:01 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 07:07:01 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 07:07:01 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 07:07:01 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/movies?sort=release_date" for 127.0.0.1 at 2013-07-27 07:14:53 -0700
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort"=>"release_date"}
+  [1m[35mMovie Load (0.1ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+Rendered movies/index.html.haml within layouts/application (39.6ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-27 07:14:53 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-27 07:14:53 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-27 07:14:53 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-27 07:14:53 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
