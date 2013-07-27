@@ -1,3 +1,5 @@
+Deployed on [Heroku](http://nsb-rottenpotatoes.herokuapp.com)
+
 Homework 2 - CS 169.1x SaaS
 ==================
 
