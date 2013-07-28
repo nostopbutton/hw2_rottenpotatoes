@@ -7,18 +7,27 @@ class MoviesController < ApplicationController
   end
 
   def index
-    
+    @all_ratings = Movie.all_ratings
+
     @sort = params[:sort]
-    case @sort
-    when "title"
-      @movies = Movie.find(:all, :order => "title")
-    when "release_date"
-      @movies = Movie.find(:all, :order => "release_date")
+    if params.has_key?(:ratings)
+      @ratings_filter = params[:ratings].keys
+    elsif params.has_key?(:ratings_filter)
+      @ratings_filter = params[:ratings_filter]
     else 
-      @movies = Movie.all
+      @ratings_filter = @all_ratings
     end
 
-   end
+    case @sort
+    when "title"
+      @movies = Movie.where(rating: @ratings_filter).find(:all, :order => "title") #.find(:all, :order => "title")
+    when "release_date"
+      @movies = Movie.where(rating: @ratings_filter).find(:all, :order => "release_date")
+    else 
+      @movies = Movie.where(rating: @ratings_filter)
+    end
+
+  end
 
   def new
     # default: render 'new' template
