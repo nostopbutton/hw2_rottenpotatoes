@@ -6,57 +6,43 @@ class MoviesController < ApplicationController
     # will render app/views/movies/show.<extension> by default
   end
 
-  def store_params_in_session
-    store_ratings
-    store_sort
+  # def store_params_in_session
+  #   store_ratings
+  #   store_sort
 
-    # flash.keep
-    # redirect_to movies_path @sort @ratings_filter
+  #   # flash.keep
+  #   # redirect_to movies_path @sort @ratings_filter
 
-  end
+  # end
 
-  def store_sort
-    if params.has_key?(:sort)
-      @sort = session[:sort] = params[:sort]
-    elsif session.has_key?(:sort)
-      @sort = session[:sort]
-    # else 
-    #   @sort = session[:sort] = @all_ratings
-    end
+  # def store_sort
+  #   if params.has_key?(:sort)
+  #     @sort = session[:sort] = params[:sort]
+  #   elsif session.has_key?(:sort)
+  #     @sort = session[:sort]
+  #   # else 
+  #   #   @sort = session[:sort] = @all_ratings
+  #   end
 
-  end
+  # end
 
-  def store_ratings
-    if params.has_key?(:ratings)
-      @ratings_filter = session[:ratings] = params[:ratings].keys
-    # elsif params.has_key?(:ratings_filter)
-    #   @ratings_filter = session[:ratings]= params[:ratings_filter]
-    elsif session.has_key?(:ratings)
-      @ratings_filter = session[:ratings]
-    else 
-      @ratings_filter = session[:ratings] = @all_ratings
-    end
-  end
+  # def store_ratings
+  #   if params.has_key?(:ratings)
+  #     @ratings_filter = session[:ratings] = params[:ratings].keys
+  #   # elsif params.has_key?(:ratings_filter)
+  #   #   @ratings_filter = session[:ratings]= params[:ratings_filter]
+  #   elsif session.has_key?(:ratings)
+  #     @ratings_filter = session[:ratings]
+  #   else 
+  #     @ratings_filter = session[:ratings] = @all_ratings
+  #   end
+  # end
 
   def retrieve_params_from_session
-    @sort = ""
-    @ratings = ""
 
-    if session.has_key?(:sort)
-      @sort = session[:sort]
-    end
+    # @sort = ""
+    # @ratings = Movie.all_ratings
 
-    if session.has_key?(:ratings)
-      @ratings = session[:ratings]
-    end
-
-    # flash.keep
-    # redirect_to movies_path(:sort => @sort, :ratings => @ratings)
-
-  end
-
-  def index
-    @all_ratings = Movie.all_ratings
 
     if params.has_key?(:sort)
       @sort = session[:sort] = params[:sort]
@@ -66,6 +52,10 @@ class MoviesController < ApplicationController
       @sort = ""
     end
 
+    # if session.has_key?(:sort)
+    #   @sort = session[:sort]
+    # end
+
     if params.has_key?(:ratings)
       @ratings = session[:ratings] = params[:ratings]
       @ratings_filter = @ratings.keys
@@ -73,7 +63,39 @@ class MoviesController < ApplicationController
       @ratings = session[:ratings]
       @ratings_filter = @ratings.keys
     else 
-      @ratings_filter = session[:ratings] = @all_ratings
+      @ratings_filter = Movie.all_ratings
+    end
+
+    # if session.has_key?(:ratings)
+    #   @ratings = session[:ratings]
+    # end
+
+    flash.keep
+    redirect_to movies_path(:sort => @sort, :ratings => @ratings)
+
+  end
+
+  def index
+    @all_ratings = Movie.all_ratings
+
+    retrieve_params_from_session unless params.has_key?(:sort) && params.has_key?(:ratings)
+
+    if params.has_key?(:sort)
+      @sort = session[:sort] = params[:sort]
+    # elsif session.has_key?(:sort)
+    #   @sort = session[:sort]
+    # else
+    #   @sort = ""
+    end
+
+    if params.has_key?(:ratings)
+      @ratings = session[:ratings] = params[:ratings]
+      @ratings_filter = @ratings.keys
+    # elsif session.has_key?(:ratings)
+    #   @ratings = session[:ratings]
+    #   @ratings_filter = @ratings.keys
+    # else 
+    #   @ratings_filter = session[:ratings] = @all_ratings
     end
 
     # retrieve_params_from_session unless params.has_key?(:sort) && params.has_key?(:ratings)
