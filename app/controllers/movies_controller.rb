@@ -49,7 +49,7 @@ class MoviesController < ApplicationController
     elsif session.has_key?(:sort)
       @sort = session[:sort]
     else
-      @sort = ""
+      @sort = "no_sort"
     end
 
     # if session.has_key?(:sort)
@@ -58,13 +58,16 @@ class MoviesController < ApplicationController
 
     if params.has_key?(:ratings)
       @ratings = session[:ratings] = params[:ratings]
-      @ratings_filter = @ratings.keys
+      # @ratings_filter = @ratings.keys
     elsif session.has_key?(:ratings)
       @ratings = session[:ratings]
-      @ratings_filter = @ratings.keys
+      # @ratings_filter = @ratings
     else 
-      @ratings_filter = Movie.all_ratings
+      all = Hash.new
+      Movie.all_ratings.each {|rate| all["#{rate}"] = "1"}
+      @ratings = session[:ratings] = all
     end
+    @ratings_filter = @ratings.keys
 
     # if session.has_key?(:ratings)
     #   @ratings = session[:ratings]
@@ -153,6 +156,7 @@ class MoviesController < ApplicationController
   def destroy
     @movie = Movie.find(params[:id])
     @movie.destroy
+    session.clear
     flash[:notice] = "Movie '#{@movie.title}' deleted."
     redirect_to movies_path
   end
